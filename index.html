@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Balance Calculator</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Balance Calculator</h1>
+    <div id="inputForm">
+      <label for="transaction">Enter Transaction Amount:</label>
+      <input type="number" id="transaction" placeholder="Enter amount">
+      <button onclick="addTransaction()">Add Transaction</button>
+    </div>
+    <div id="summaryTable">
+      <h2>Transaction Summary</h2>
+      <table>
+        <tr>
+          <th>Total Amount Credited</th>
+          <td id="totalCredit">0</td>
+        </tr>
+        <tr>
+          <th>Total Amount Debited</th>
+          <td id="totalDebit">0</td>
+        </tr>
+        <tr>
+          <th>Closing Balance</th>
+          <td id="closingBalance">0</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
